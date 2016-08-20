@@ -1,0 +1,20 @@
+{
+    "name": "sgc-fireball/nevercodealone-codeception",
+    "require": {},
+    "require-dev": {
+        "codeception/base": "^2.2",
+        "facebook/webdriver": "^1.0.1",
+        "sgc-fireball/selenium-server-standalone-installer": "dev-master"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "HRDNS\\Composer\\Script\\Selenium\\Event::install",
+            "HRDNS\\Composer\\Script\\PhantomJS\\Event::install"
+        ],
+        "post-update-cmd": [
+            "HRDNS\\Composer\\Script\\Selenium\\Event::install",
+            "HRDNS\\Composer\\Script\\PhantomJS\\Event::install"
+        ],
+        "test": "codecept run acceptance"
+    }
+}
