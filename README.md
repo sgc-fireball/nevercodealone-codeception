@@ -12,7 +12,7 @@ php vendor/bin/codecept bootstrap
 
 ### Bestehendes auschecken
 ```bash
-git clone ...
+git clone git@github.com:sgc-fireball/nevercodealone-codeception.git
 composer install
 ```
 
